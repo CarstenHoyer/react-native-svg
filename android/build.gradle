@@ -5,6 +5,9 @@ def safeExtGet(prop, fallback) {
 buildscript {
     repositories {
         jcenter()
+	maven {
+            url "http://repo.spring.io/plugins-release/"
+        }
         maven {
             url 'https://maven.google.com/'
             name 'Google'
@@ -13,7 +16,7 @@ buildscript {
 
     dependencies {
         //noinspection GradleDependency
-        classpath 'com.android.tools.build:gradle:3.2.1'
+        classpath 'com.android.tools.build:gradle:2.3.3'
     }
 }
 
